@@ -1,13 +1,4 @@
-@mixin font-40 {
+@mixin useMontserrat($fontSize: 1rem) {
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-}
-
-@mixin font-24 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-}
-
-@mixin useMontserrat {
-  font-family: "Montserrat", sans-serif;
+  font-size: $fontSize;
 }

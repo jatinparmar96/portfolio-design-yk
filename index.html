@@ -7,17 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer> </script>
 </head>
 
 <body>
     <header>
-        <div class="flex space-between">
-            <h1>Wireframes</h1>
-            <h1>Home/Project Page</h1>
-
-        </div>
+        <button onclick="showNav()" class="hamburger-button">O</button>
+        <nav id="hamburger-nav-menu" class="hamburger-nav-menu hide-nav">
+            <button onclick="hideNav()" class="close-nav-btn" id="close-nav-btn">x</button>
+            <ul>
+                <li>Work</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <a>Contact</a>
     </header>
+    <main>
+        <section>
+            <h2>My Projects</h2>
+        </section>
+    </main>
 
 </body>
 
