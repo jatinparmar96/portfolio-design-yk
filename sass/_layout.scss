@@ -1,10 +1,47 @@
 html {
   @include useMontserrat();
 }
-
-.flex {
-  display: flex;
+body {
+  min-height: 100vh;
 }
-.space-between {
-  justify-content: space-between;
+main,
+header {
+  padding: 0 28px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 40px;
+  .project-title {
+    margin: 0;
+    @include useMontserrat(52px);
+    line-height: 63.39px;
+  }
+  .project-info-container {
+    display: flex;
+    gap: 1rem;
+    .description-container {
+      display: flex;
+      flex-direction: column;
+      .description-title {
+        @include useMontserrat(18px);
+        color: $grey-color;
+      }
+      .description-value {
+        @include useMontserrat(28px);
+      }
+    }
+  }
+}
+
+.carousel {
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  .carousel-item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }

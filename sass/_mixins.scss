@@ -1,4 +1,5 @@
 @mixin useMontserrat($fontSize: 1rem) {
   font-family: "Montserrat", sans-serif;
   font-size: $fontSize;
+  font-weight: 500;
 }
