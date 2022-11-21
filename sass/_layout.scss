@@ -19,18 +19,23 @@ header {
     @include useMontserrat(52px);
     line-height: 63.39px;
   }
+  .project-description {
+    line-height: 28px;
+    @include useMontserrat(16px, 400);
+  }
   .project-info-container {
     display: flex;
     gap: 1rem;
     .description-container {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1rem;
       .description-title {
         @include useMontserrat(18px);
         color: $grey-color;
       }
       .description-value {
-        @include useMontserrat(28px);
+        @include useMontserrat(24px);
       }
     }
   }
@@ -43,5 +48,80 @@ header {
   .carousel-item {
     display: inline-block;
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: flex;
+
+    .section {
+      .section-header {
+        h2 {
+          margin: 0;
+        }
+        @include showElement();
+      }
+      .section-items {
+        @include hideElement();
+        h2 {
+          @include useMontserrat(4rem);
+        }
+        .project-container {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          .image-container {
+            flex: 1;
+            img {
+              width: 100%;
+            }
+          }
+          .project-details {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          button.primary-button {
+            margin-top: auto;
+            align-self: flex-start;
+          }
+        }
+        :nth-child(odd).project-container {
+          text-align: right;
+        }
+      }
+      transition: all 300ms ease;
+    }
+
+    .section.visible {
+      flex: 1;
+      .section-header {
+        @include hideElement();
+      }
+      .section-items {
+        @include showElement();
+        h2 {
+          margin: 0;
+        }
+        animation: 500ms slide;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

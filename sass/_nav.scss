@@ -1,5 +1,8 @@
 .hamburger-container {
   text-align: right;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 .hamburger-nav-menu {
   position: fixed;

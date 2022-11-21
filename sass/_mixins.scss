@@ -1,5 +1,17 @@
-@mixin useMontserrat($fontSize: 1rem) {
+@mixin useMontserrat($fontSize: 1rem, $fontWeight: 500) {
   font-family: "Montserrat", sans-serif;
   font-size: $fontSize;
-  font-weight: 500;
+  font-weight: $fontWeight;
+}
+
+@mixin hideElement() {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@mixin showElement() {
+  visibility: visible;
+  width: auto;
+  height: auto;
 }
