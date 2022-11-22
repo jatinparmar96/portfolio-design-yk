@@ -15,4 +15,19 @@
       justify-content: center;
     }
   }
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    width: 100%;
+    place-items: unset;
+    padding: 2rem 28px;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      .socials {
+        order: 3;
+      }
+    }
+  }
 }

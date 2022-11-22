@@ -1,0 +1,27 @@
+.section:not(.visible) {
+  background-color: map-get($colors, grey);
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: map-get($colors, purple);
+  }
+}
+
+.section-items .main-body {
+  padding: 0 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.software-image-container {
+  display: flex;
+  gap: 1rem;
+  img {
+    flex: 1;
+  }
+}

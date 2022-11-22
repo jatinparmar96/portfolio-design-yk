@@ -64,7 +64,7 @@ a {
 }
 
 @each $index, $color in $colors {
-  .font-#{$index} {
+  .font-#{"" + $index} {
     color: $color;
   }
 }
@@ -87,4 +87,9 @@ a {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.jumbo-font {
+  font-size: 10rem !important;
+  line-height: 180px;
 }

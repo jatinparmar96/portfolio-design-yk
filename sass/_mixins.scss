@@ -5,13 +5,9 @@
 }
 
 @mixin hideElement() {
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 @mixin showElement() {
-  visibility: visible;
-  width: auto;
-  height: auto;
+  display: block;
 }
