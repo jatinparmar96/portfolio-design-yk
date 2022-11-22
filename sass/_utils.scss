@@ -3,7 +3,7 @@
 }
 img {
   max-width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .flex {
@@ -90,6 +90,6 @@ a {
 }
 
 .jumbo-font {
-  font-size: 10rem !important;
+  font-size: 8rem !important;
   line-height: 180px;
 }
