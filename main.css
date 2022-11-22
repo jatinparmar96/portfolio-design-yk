@@ -45,6 +45,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 main,
 header {
   padding: 0 28px;
@@ -119,6 +123,7 @@ header {
     visibility: hidden;
     width: 0;
     height: 0;
+    /** For ODD **/
   }
   .main .section .section-items h2 {
     font-family: "Montserrat", sans-serif;
@@ -141,12 +146,28 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .main .section .section-items .project-container button.primary-button {
+  .main .section .section-items .project-container a.primary-button {
+    display: block;
     margin-top: auto;
     align-self: flex-start;
   }
   .main .section .section-items :nth-child(odd).project-container {
     text-align: right;
+  }
+  .main .section .section-items :nth-child(odd).project-container .project-details {
+    order: 1;
+  }
+  .main .section .section-items :nth-child(odd).project-container .image-container {
+    order: 2;
+  }
+  .main .section .section-items :nth-child(odd).project-container .project-info-container {
+    align-self: flex-end;
+  }
+  .main .section .section-items :nth-child(odd).project-container .description-container {
+    align-self: flex-end;
+  }
+  .main .section .section-items :nth-child(odd).project-container .primary-button {
+    align-self: flex-end;
   }
   .main .section.visible {
     flex: 1;
@@ -575,6 +596,11 @@ img {
 
 .align-right {
   align-self: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {

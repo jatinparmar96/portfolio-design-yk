@@ -4,6 +4,9 @@ html {
 body {
   min-height: 100vh;
 }
+main {
+  overflow-x: hidden;
+}
 main,
 header {
   padding: 0 28px;
@@ -77,19 +80,37 @@ header {
               width: 100%;
             }
           }
+
           .project-details {
             width: 45%;
             display: flex;
             flex-direction: column;
           }
 
-          button.primary-button {
+          a.primary-button {
+            display: block;
             margin-top: auto;
             align-self: flex-start;
           }
         }
+        /** For ODD **/
         :nth-child(odd).project-container {
+          .project-details {
+            order: 1;
+          }
+          .image-container {
+            order: 2;
+          }
           text-align: right;
+          .project-info-container {
+            align-self: flex-end;
+          }
+          .description-container {
+            align-self: flex-end;
+          }
+          .primary-button {
+            align-self: flex-end;
+          }
         }
       }
       transition: all 300ms ease;
