@@ -20,3 +20,71 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.full-width-image {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+@each $index, $val in $diffs {
+  .ml-#{$index} {
+    margin-left: $val;
+  }
+  .mr-#{$index} {
+    margin-right: $val;
+  }
+  .ma-#{$index} {
+    margin: $val;
+  }
+  .mt-#{$index} {
+    margin-top: $val;
+  }
+  .mb-#{$index} {
+    margin-bottom: $val;
+  }
+  .gap-#{$index} {
+    gap: $val;
+  }
+  .pr-#{$index} {
+    padding-right: $val;
+  }
+  .pl-#{$index} {
+    padding-left: $val;
+  }
+  .pb-#{$index} {
+    padding-bottom: $val;
+  }
+  .pt-#{$index} {
+    padding-top: $val;
+  }
+}
+
+@each $index, $color in $colors {
+  .font-#{$index} {
+    color: $color;
+  }
+}
+
+@each $index, $color in $font-sizes {
+  .font-#{$index} {
+    font-size: $color;
+  }
+}
+
+.flex {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
