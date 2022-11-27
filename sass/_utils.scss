@@ -90,6 +90,9 @@ a {
 }
 
 .jumbo-font {
-  font-size: 8rem !important;
-  line-height: 180px;
+  font-size: 3rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 8rem !important;
+    line-height: 180px;
+  }
 }

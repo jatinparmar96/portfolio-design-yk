@@ -5,9 +5,13 @@
 }
 
 @mixin hideElement() {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  transform: translateY(-1000px);
 }
 
 @mixin showElement() {
-  display: block;
+  visibility: visible;
+  position: unset;
+  transform: translateY(0);
 }

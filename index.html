@@ -23,8 +23,8 @@
         <nav id="hamburger-nav-menu" class="hamburger-nav-menu hide-nav">
             <button onclick="hideNav()" class="close-nav-btn" id="close-nav-btn">x</button>
             <ul>
-                <li>Work</li>
-                <li>About</li>
+                <li onclick="showSection('header');hideNav()">Work</li>
+                <li onclick="showSection('about');hideNav()">About</li>
                 <li>Contact</li>
             </ul>
 
@@ -37,7 +37,7 @@
                 <h2>My Projects</h2>
             </div>
             <div class="section-items">
-                <h2>MY PROJECTS</h2>
+                <h2 class="font-400 ma0 mb3">MY PROJECTS</h2>
                 <div class="project-container">
                     <div class="image-container">
                         <img class="project-image" src="https://picsum.photos/507/371" />
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="section about visible ml-2" onclick="showSection('about')">
+        <section id="about" class="section about visible ml2-ns" onclick="showSection('about')">
 
             <div class="section-header ">
                 <h2>About</h2>
@@ -164,9 +164,9 @@
                 </div>
                 <div class="main-body flex flex-column">
 
-                    <div class="flex">
-                        <h2 class="w-40 jumbo-font">About Me</h2>
-                        <div class="flex flex-column w-50 self-center">
+                    <div class="flex-ns">
+                        <h2 class="w-40-ns ma-0 jumbo-font">About Me</h2>
+                        <div class="flex flex-column w-50-ns self-center">
                             <h3 class="font-300 mb-0"> My Vision</h3>
                             <p class="font-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
                                 nesciunt

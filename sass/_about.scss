@@ -1,10 +1,26 @@
+@media screen and (max-width: 1024px) {
+  .section:not(.visible) {
+    display: none;
+  }
+  .section-header {
+    display: none;
+  }
+}
+
 .section:not(.visible) {
   background-color: map-get($colors, grey);
-  padding: 1rem;
   color: white;
   cursor: pointer;
+  width: 8rem;
+  text-align: center;
   &:hover {
     background-color: map-get($colors, purple);
+  }
+  position: relative;
+  .section-header {
+    top: 3rem;
+    width: 8rem;
+    position: fixed;
   }
 }
 
@@ -14,8 +30,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 0.75rem;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .software-image-container {
