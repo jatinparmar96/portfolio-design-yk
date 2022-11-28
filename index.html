@@ -32,19 +32,29 @@
 
     </header>
     <main class="main">
-        <section id="header" class="section " onclick="showSection('header')">
+        <section id="header" class="section visible" onclick="showSection('header')">
             <div class="section-header">
                 <h2>My Projects</h2>
             </div>
             <div class="section-items">
-                <h2 class="font-400 ma0 mb3">MY PROJECTS</h2>
+                <div></div>
+                <div class="flex-ns space-between mb-100">
+                    <div class="flex-ns gap-1">
+                        <img class="w-30" src="./icons/logo.png">
+                        <img class="w-50" src="./icons/name.png">
+                    </div>
+                    <div>
+                        <button class="secondary-btn">Let's Connect</button>
+                    </div>
+                </div>
+                <h2 class="font-400 ma0 mb5">MY<br /> PROJECTS</h2>
                 <div class="project-container">
                     <div class="image-container">
                         <img class="project-image" src="https://picsum.photos/507/371" />
                     </div>
-                    <div class="project-details">
+                    <div class="project-details ">
                         <h3 class="project-title">Project Title</h3>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="project-description ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Consequuntur
                             aliquam quidem eaque, rem magni
                             nostrum, dolor distinctio veniam quam ullam animi reiciendis a, assumenda earum.</p>
@@ -153,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="section about visible ml2-ns" onclick="showSection('about')">
+        <section id="about" class="section about ml2-ns" onclick="showSection('about')">
 
             <div class="section-header ">
                 <h2>About</h2>

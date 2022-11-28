@@ -16,7 +16,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .project-title {
@@ -125,7 +125,7 @@ header {
           }
         }
         /** For ODD **/
-        :nth-child(odd).project-container {
+        .project-container:nth-child(odd) {
           .project-details {
             order: 1;
           }
@@ -161,7 +161,7 @@ header {
 }
 
 header.header-project-title {
-  padding: 0 $project-title-padding;
+  padding: 1rem $project-title-padding;
 }
 section.project-details {
   display: flex;
@@ -187,4 +187,15 @@ section.project-details {
     opacity: 1;
     width: 100%;
   }
+}
+
+.sticky-back-btn {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: 0;
+  width: 5rem;
+  text-align: center;
+  color: $white-color;
+  background-color: $grey-color;
 }
