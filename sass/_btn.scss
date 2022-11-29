@@ -1,13 +1,13 @@
 .primary-button {
   border-radius: 50px;
-  font-size: 28px;
+  font-size: 20px;
   background-color: $black-color;
   display: flex;
   align-items: center;
   text-align: center;
   color: $white-color;
   width: fit-content;
-  padding: 0.5rem 1.5rem;
+  padding: 0.85rem 1.35rem;
   border: none;
   transition: all 300ms ease-in-out;
   gap: 1rem;
@@ -21,14 +21,16 @@
 
 .secondary-btn {
   border-radius: 50px;
-  font-size: 28px;
-  background-color: $white-color;
-  border-color: $purple-color;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  border-color: #8118f2;
   align-items: center;
   text-align: center;
-  color: $purple-color;
-  padding: 0.25rem 0.75rem;
+  color: #8118f2;
+  padding: 0.85rem 1.35rem;
   transition: all 300ms ease-in-out;
+  opacity: 0.8;
   cursor: pointer;
   &:hover {
     background-color: $purple-color;
@@ -41,7 +43,6 @@
   height: 82px;
   width: 82px;
   border-radius: 50%;
-  background-image: url("https://picsum.photos/82/82");
 }
 
 .hamburger-btn {

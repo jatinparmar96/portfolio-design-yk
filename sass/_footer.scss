@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   place-items: center;
   padding: 2rem 0;
+  background-color: map-get($colors, white-2);
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -20,8 +21,8 @@
     width: 100%;
     place-items: unset;
     padding: 2rem 28px;
-    margin-top: 1rem;
-    border-top: 1px solid black;
+    // margin-top: 1rem;
+
     .footer-container {
       flex-direction: row;
       justify-content: space-between;

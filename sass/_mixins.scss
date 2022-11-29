@@ -6,7 +6,7 @@
 
 @mixin hideElement() {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   transform: translateY(-1000px);
 }
 

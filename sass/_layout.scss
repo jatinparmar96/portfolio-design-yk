@@ -3,20 +3,23 @@ html {
 }
 body {
   min-height: 100vh;
+  color: $black-color;
 }
 main {
-  overflow-x: hidden;
+  overflow: visible;
+  height: 100%;
 }
 main,
 header {
-  padding: 0 28px;
 }
 
+main {
+}
 .project-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .project-title {
@@ -31,30 +34,29 @@ header {
 .project-info-container {
   display: flex;
   gap: 1rem;
+  @media screen and (min-width: 1024px) {
+    flex-direction: column;
+  }
   .description-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
     .description-title {
-      @include useMontserrat(18px);
+      @include useMontserrat(14px);
+      margin-bottom: 0.25rem;
+
       color: $grey-color;
     }
     .description-value {
-      @include useMontserrat(24px);
+      @include useMontserrat(20px, 400);
     }
   }
 }
 
 .project-intro-header {
   @media screen and (min-width: 1024px) {
-    display: flex;
-    gap: 3rem;
     .project-title {
       font-size: 10rem;
       line-height: 180px;
-    }
-    .main-title {
-      width: 40%;
     }
     .main-links {
       align-self: flex-end;
@@ -71,27 +73,52 @@ header {
     }
   }
 }
-.carousel {
-  max-width: 100%;
-  overflow-x: scroll;
-  white-space: nowrap;
-  .carousel-item {
-    display: inline-block;
-    margin-right: 1rem;
+.carousel-container {
+  position: relative;
+
+  button.carousel-arrow-right {
+    position: absolute;
+    right: 1rem;
+    top: 30%;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    opacity: 0.8;
+  }
+  .carousel {
+    max-width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    .carousel-item {
+      display: inline-block;
+      margin-right: 28px;
+      width: 25%;
+    }
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main.project-item-main {
-    padding: 0 $project-title-padding;
-  }
   .main {
     display: flex;
     .section {
-      transition: all 1s;
+      transition: all 400ms;
     }
 
     .section {
+      .section-image {
+        @include showElement();
+      }
       .section-header {
         h2 {
           margin: 0;
@@ -104,11 +131,12 @@ header {
         .project-container {
           display: flex;
           flex-direction: row;
-          gap: 1rem;
+          gap: 2.5rem;
           .image-container {
             flex: 1;
             img {
               width: 100%;
+              display: block;
             }
           }
 
@@ -119,7 +147,6 @@ header {
           }
 
           a.primary-button {
-            display: block;
             margin-top: auto;
             align-self: flex-start;
           }
@@ -148,13 +175,23 @@ header {
 
     .section.visible {
       flex: 1;
+      .section-image {
+        @include hideElement();
+      }
       .section-header {
         @include hideElement();
       }
       .section-items {
         @include showElement();
-        animation: 1s slide;
+        padding: 28px 28px 0 28px;
+        animation: 800ms slide;
         animation-fill-mode: forwards;
+        height: 100%;
+        .header {
+          position: sticky;
+          top: 1.5rem;
+          z-index: 9999;
+        }
       }
     }
   }

@@ -33,21 +33,23 @@
     </header>
     <main class="main">
         <section id="header" class="section visible" onclick="showSection('header')">
-            <div class="section-header">
-                <h2>My Projects</h2>
+            <div class="section-image">
+                <img src="./icons/work.svg" />
             </div>
-            <div class="section-items">
+            <div class="section-header">
+                <h2>Work</h2>
+            </div>
+            <div class="section-items padding-right-content">
                 <div></div>
-                <div class="flex-ns space-between mb-100">
+                <div class="flex-ns space-between mb-150 header">
                     <div class="flex-ns gap-1">
-                        <img class="w-30" src="./icons/logo.png">
-                        <img class="w-50" src="./icons/name.png">
+                        <img class="w-70" src="./icons/logo.svg" />
                     </div>
-                    <div>
-                        <button class="secondary-btn">Let's Connect</button>
+                    <div class="self-center">
+                        <button class="secondary-btn ">Let's Connect</button>
                     </div>
                 </div>
-                <h2 class="font-400 ma0 mb5">MY<br /> PROJECTS</h2>
+                <h2 class="font-650  mb-150">MY<br /> PROJECTS</h2>
                 <div class="project-container">
                     <div class="image-container">
                         <img class="project-image" src="https://picsum.photos/507/371" />
@@ -130,42 +132,94 @@
                     </div>
                 </div>
 
-                <div>
-                    <h3>Case Studies</h3>
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/420/420" />
-                            <h3>Project Title</h3>
-                            <p>UI Study</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/420/420" />
-                            <h3>Project Title</h3>
-                            <p>UI Study</p>
+                <div class="mb-150">
+                    <h3 class="font-325 ma-0 mb-2">Case Studies</h3>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow-right">
+                            <img src="./icons/black-arrow-right.svg" />
+                        </button>
+                        <div class="carousel">
+
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div>
-                    <h3>Extras</h3>
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/420/420" />
-                            <h3>Project Title</h3>
-                            <p>UI Study</p>
+                <div class="mb-150">
+                    <h3 class="font-325 ma-0 mb-2">Extras</h3>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow-right">
+                            <img src="./icons/black-arrow-right.svg" />
+                        </button>
+                        <div class="carousel">
+
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-zoom-container">
+                                    <img src="https://picsum.photos/420/420" />
+                                </div>
+                                <h3 class="font-218 ma-0 mt-1">Project Title</h3>
+                                <p>UI Study</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/420/420" />
-                            <h3>Project Title</h3>
-                            <p>UI Study</p>
-                        </div>
+
                     </div>
                 </div>
-            </div>
         </section>
         <section id="about" class="section about ml2-ns" onclick="showSection('about')">
 
-            <div class="section-header ">
+            <div class="section-image">
+                <img src="./icons/about.svg" />
+            </div>
+            <div class="section-header">
                 <h2>About</h2>
             </div>
             <div class="section-items">
@@ -267,16 +321,13 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <img src="https://picsum.photos/307/80" />
+            <img class="w-20" src="./icons/logo.svg" />
             <div class="socials">
-                <a href="#" class="social-btn">
-                </a>
-                <a href="#" class="social-btn">
-                </a>
-                <a href="#" class="social-btn">
+                <a href="https://www.linkedin.com/in/yash-kohmaria-a96067209/" target="_blank">
+                    <img class="social-btn w-70" src="./icons/linkedin-icon.svg" />
                 </a>
             </div>
-            <span>All Rights Reserved &copy;</span>
+
         </div>
     </footer>
 

@@ -99,3 +99,17 @@ a {
 .logo-image {
   width: 60px;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.image-zoom-container {
+  overflow: hidden;
+  img {
+    transition: all 500ms;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
