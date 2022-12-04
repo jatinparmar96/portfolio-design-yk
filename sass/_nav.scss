@@ -1,5 +1,10 @@
 .hamburger-container {
   text-align: right;
+  position: relative;
+  .hamburger-btn {
+    font-size: 2.5rem;
+    z-index: 999;
+  }
   @media screen and (min-width: 1024px) {
     display: none;
   }
@@ -12,6 +17,7 @@
   height: 100vh;
   background-color: white;
   transition: all 300ms ease;
+  z-index: 999;
 
   ul {
     margin-top: 4rem;

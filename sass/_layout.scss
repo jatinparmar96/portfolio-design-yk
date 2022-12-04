@@ -6,8 +6,12 @@ body {
   color: $black-color;
 }
 main {
-  overflow: visible;
-  height: 100%;
+  padding: 0 28px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    overflow: visible;
+    height: 100%;
+  }
 }
 main,
 header {
@@ -25,7 +29,9 @@ main {
 .project-title {
   margin: 0;
   @include useMontserrat(45px);
-  line-height: 30px;
+  @media screen and (min-width: 1024px) {
+    line-height: 30px;
+  }
 }
 .project-description {
   line-height: 28px;
@@ -34,6 +40,7 @@ main {
 .project-info-container {
   display: flex;
   gap: 1rem;
+
   @media screen and (min-width: 1024px) {
     flex-direction: column;
   }
@@ -53,6 +60,9 @@ main {
 }
 
 .project-intro-header {
+  .project-info-container {
+    margin-top: 1rem;
+  }
   @media screen and (min-width: 1024px) {
     .project-title {
       font-size: 10rem;
@@ -62,7 +72,6 @@ main {
       align-self: flex-end;
       width: 50%;
       .project-info-container {
-        margin-top: 1rem;
         display: flex;
         flex-direction: column;
       }
@@ -73,6 +82,7 @@ main {
     }
   }
 }
+
 .carousel-container {
   position: relative;
 
@@ -100,11 +110,33 @@ main {
     .carousel-item {
       display: inline-block;
       margin-right: 28px;
-      width: 25%;
+      width: 75%;
+      @media screen and (min-width: 1024px) {
+        width: 25%;
+      }
     }
   }
   .carousel::-webkit-scrollbar {
     display: none;
+  }
+}
+
+.main {
+  .section {
+    .section-image {
+      @include hideElement();
+    }
+    .section-items {
+      .project-container {
+        .project-title {
+          margin-top: 1rem;
+        }
+      }
+      a.primary-button {
+        margin-left: auto;
+        margin-top: 2rem;
+      }
+    }
   }
 }
 
@@ -149,6 +181,7 @@ main {
           a.primary-button {
             margin-top: auto;
             align-self: flex-start;
+            margin-left: unset;
           }
         }
         /** For ODD **/
@@ -200,6 +233,7 @@ main {
 header.header-project-title {
   padding: 1rem $project-title-padding;
 }
+
 section.project-details {
   display: flex;
   flex-direction: column;

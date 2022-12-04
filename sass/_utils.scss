@@ -61,6 +61,39 @@ a {
   .pt-#{$index} {
     padding-top: $val;
   }
+
+  @media screen and (min-width: 1024px) {
+    .ml-#{$index}-ns {
+      margin-left: $val;
+    }
+    .mr-#{$index}-ns {
+      margin-right: $val;
+    }
+    .ma-#{$index}-ns {
+      margin: $val;
+    }
+    .mt-#{$index}-ns {
+      margin-top: $val;
+    }
+    .mb-#{$index}-ns {
+      margin-bottom: $val;
+    }
+    .gap-#{$index}-ns {
+      gap: $val;
+    }
+    .pr-#{$index}-ns {
+      padding-right: $val;
+    }
+    .pl-#{$index}-ns {
+      padding-left: $val;
+    }
+    .pb-#{$index}-ns {
+      padding-bottom: $val;
+    }
+    .pt-#{$index}-ns {
+      padding-top: $val;
+    }
+  }
 }
 
 @each $index, $color in $colors {
@@ -72,6 +105,22 @@ a {
 @each $index, $color in $font-sizes {
   .font-#{$index} {
     font-size: $color;
+  }
+  @media screen and (min-width: 1024px) {
+    .font-#{"" + $index}-ns {
+      font-size: $color;
+    }
+  }
+}
+
+@each $index, $line-height in $line-heights {
+  .lh-#{$index} {
+    line-height: $line-height;
+  }
+  @media screen and (min-width: 1024px) {
+    .lh-#{"" + $index}-ns {
+      line-height: $line-height;
+    }
   }
 }
 
@@ -111,5 +160,18 @@ a {
     &:hover {
       transform: scale(1.5);
     }
+  }
+}
+
+.dn-mb {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: initial;
+  }
+}
+
+.text-right-ns {
+  @media screen and (min-width: 1024px) {
+    text-align: right;
   }
 }

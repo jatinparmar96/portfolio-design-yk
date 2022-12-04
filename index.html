@@ -25,14 +25,18 @@
             <ul>
                 <li onclick="showSection('header');hideNav()">Work</li>
                 <li onclick="showSection('about');hideNav()">About</li>
-                <li>Contact</li>
+                <li>
+                    <a href="mailto:yashkohmaria14@gmail.com">
+                        Let's Connect
+                    </a>
+                </li>
             </ul>
 
         </nav>
 
     </header>
     <main class="main">
-        <section id="header" class="section visible" onclick="showSection('header')">
+        <section id="header" class="section visible " onclick="showSection('header')">
             <div class="section-image">
                 <img src="./icons/work.svg" />
             </div>
@@ -45,23 +49,30 @@
                     <div class="flex-ns gap-1">
                         <img class="w-70" src="./icons/logo.svg" />
                     </div>
-                    <div class="self-center">
-                        <button class="secondary-btn ">Let's Connect</button>
+                    <div class="self-center dn-mb">
+                        <button class="secondary-btn "> <a href="mailto:yashkohmaria14@gmail.com">
+                                Let's Connect
+                            </a></button>
                     </div>
                 </div>
-                <h2 class="font-650  mb-150">MY<br /> PROJECTS</h2>
+                <h2 class="font-650-ns font-400  mb-150-ns">MY<br /> PROJECTS</h2>
+
                 <div class="project-container">
                     <div class="image-container">
-                        <img class="project-image" src="https://picsum.photos/507/371" />
+                        <a href="./projects/project-item.html">
+                            <img class="project-image" src="https://picsum.photos/507/371" />
+                        </a>
                     </div>
-                    <div class="project-details ">
-                        <h3 class="project-title">Project Title</h3>
+                    <div class="project-details">
+                        <h3 class="project-title">
+                            <a href="./projects/project-item.html">Project Title </a>
+                        </h3>
                         <p class="project-description ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Consequuntur
                             aliquam quidem eaque, rem magni
                             nostrum, dolor distinctio veniam quam ullam animi reiciendis a, assumenda earum.</p>
 
-                        <div class="project-info-container">
+                        <div class="project-info-container mt-auto mb-auto">
                             <div class="description-container">
                                 <span class="description-title">Year</span>
                                 <span class="description-value">2022</span>
@@ -79,16 +90,20 @@
                 </div>
                 <div class="project-container">
                     <div class="image-container">
-                        <img class="project-image" src="https://picsum.photos/507/371" />
+                        <a href="./projects/project-item.html">
+                            <img class="project-image" src="https://picsum.photos/507/371" />
+                        </a>
                     </div>
                     <div class="project-details">
-                        <h3 class="project-title">Project Title</h3>
+                        <h3 class="project-title">
+                            <a href="./projects/project-item.html">Project Title </a>
+                        </h3>
                         <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Consequuntur
                             aliquam quidem eaque, rem magni
                             nostrum, dolor distinctio veniam quam ullam animi reiciendis a, assumenda earum.</p>
 
-                        <div class="project-info-container">
+                        <div class="project-info-container mt-auto mb-auto">
                             <div class="description-container">
                                 <span class="description-title">Year</span>
                                 <span class="description-value">2022</span>
@@ -106,16 +121,20 @@
                 </div>
                 <div class="project-container">
                     <div class="image-container">
-                        <img class="project-image" src="https://picsum.photos/507/371" />
+                        <a href="./projects/project-item.html">
+                            <img class="project-image" src="https://picsum.photos/507/371" />
+                        </a>
                     </div>
                     <div class="project-details">
-                        <h3 class="project-title">Project Title</h3>
+                        <h3 class="project-title">
+                            <a href="./projects/project-item.html">Project Title </a>
+                        </h3>
                         <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Consequuntur
                             aliquam quidem eaque, rem magni
                             nostrum, dolor distinctio veniam quam ullam animi reiciendis a, assumenda earum.</p>
 
-                        <div class="project-info-container">
+                        <div class="project-info-container mt-auto mb-auto">
                             <div class="description-container">
                                 <span class="description-title">Year</span>
                                 <span class="description-value">2022</span>
@@ -131,6 +150,7 @@
                         </a>
                     </div>
                 </div>
+
 
                 <div class="mb-150">
                     <h3 class="font-325 ma-0 mb-2">Case Studies</h3>
@@ -214,8 +234,7 @@
                     </div>
                 </div>
         </section>
-        <section id="about" class="section about ml2-ns" onclick="showSection('about')">
-
+        <section id="about" class="section  about ml2-ns" onclick="showSection('about')">
             <div class="section-image">
                 <img src="./icons/about.svg" />
             </div>
@@ -226,74 +245,116 @@
                 <div class="header">
 
                 </div>
-                <div class="main-body flex flex-column">
-
-                    <div class="flex-ns">
-                        <h2 class="w-40-ns ma-0 jumbo-font">About Me</h2>
-                        <div class="flex flex-column w-50-ns self-center">
-                            <h3 class="font-300 mb-0"> My Vision</h3>
-                            <p class="font-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                <div class=" flex flex-column">
+                    <div class="flex-ns space-between mb-150 header">
+                        <div class="flex-ns gap-1">
+                            <img class="w-70" src="./icons/logo.svg" />
+                        </div>
+                        <div class="self-center dn-mb">
+                            <button class="secondary-btn "> <a href="mailto:yashkohmaria14@gmail.com">
+                                    Let's Connect
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="flex-ns mb-8">
+                        <h2 class="w-40-ns ma-0 font-650-ns font-400">About Me</h2>
+                        <div class="flex flex-column w-50-ns self-stretch">
+                            <h3 class="font-grey font-150-ns font-100 mt-2 ma-0 mb-1 uppercase"> My Vision</h3>
+                            <p class="ma-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
                                 nesciunt
                                 nemo
                                 temporibus
                                 saepe rerum odit architecto est dolorum, impedit veritatis enim perspiciatis error modi
                                 blanditiis!</p>
+                            <button class="primary-button self-start-ns self-end align-end mt-auto mb-1_3-ns">Resume<i
+                                    class="far fa-arrow-alt-circle-down"></i>
+                            </button>
 
-                            <button class="primary-button">Resume</button>
                         </div>
+
                     </div>
 
-                    <div class="image-container mt-1">
+                    <div class="image-container mb-8">
                         <img class="w-100" src="https://picsum.photos/1600/900" />
                     </div>
 
-                    <div class="flex flex-column mt-3">
-                        <h2 class="font-grey font-200">My Journey</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque temporibus
-                            exercitationem blanditiis, deleniti, accusantium harum, quibusdam nostrum nobis reiciendis
-                            quisquam rem sequi quos at consequuntur inventore distinctio minus voluptate ratione. Veniam
-                            nobis numquam asperiores qui vel consequuntur, assumenda maiores? Incidunt ut sit at.
-                            Perferendis animi magni obcaecati ratione similique consectetur!</p>
+                    <div class="flex flex-column mt-1 mb-8">
+                        <div class="w-50-ns self-end flex-ns flex-column-ns">
+                            <h2 class="font-grey uppercase font-150-ns font-100 ma-0 mb-1">My Journey</h2>
+                            <p class="ma-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+                                temporibus
+                                exercitationem blanditiis, deleniti, accusantium harum, quibusdam nostrum nobis
+                                reiciendis
+                                quisquam rem sequi quos at consequuntur inventore distinctio minus voluptate ratione.
+                                Veniam
+                                nobis numquam asperiores qui vel consequuntur, assumenda maiores? Incidunt ut sit at.
+                                Perferendis animi magni obcaecati ratione similique consectetur!</p>
+                        </div>
+
 
                     </div>
 
-                    <div class="flex flex-column">
-                        <h2 class="font-grey font-200">My Skills</h2>
-                        <div class="grid mt-1">
-                            <div class="flex flex-column  gap-1">
+                    <div class="flex flex-column mb-4">
+                        <h2 class="font-grey uppercase font-150-ns font-100 ma-0 mb-1">My Skills</h2>
+                        <div class="grid gap-4">
+                            <div class="flex flex-column gap-1">
                                 <img src="https://picsum.photos/480/480" />
-                                <h2>UX Designer</h2>
-                                <p class="ma-0 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis hic
-                                    consequatur
-                                    mollitia,
-                                    sint eius laborum itaque exercitationem dolorem magni quod, reprehenderit quaerat a
-                                    quas. Magnam.</p>
+                                <h2 class="uppercase ma-0 self-center font-300">UX Design</h2>
+                                <div class="pl-1_5 pr-1_5 mb-1_5">
+                                    <ul class="mt-0 pl-0">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vitae.
+                                        </li>
+                                        <li>Sapiente quae facilis dicta, eius autem sint nihil dolorum quo.</li>
+                                        <li>Voluptatibus enim itaque obcaecati temporibus illum impedit minima quisquam
+                                            magni?</li>
+                                        <li>Cum in laboriosam tempore ratione enim eius necessitatibus magnam officia.
+                                        </li>
+                                        <li>Nulla placeat sit quae laborum iusto quidem, reiciendis earum voluptas?</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="flex flex-column  gap-1">
                                 <img src="https://picsum.photos/480/480" />
-                                <h2>UI Design</h2>
-                                <p class="ma-0 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis hic
-                                    consequatur
-                                    mollitia,
-                                    sint eius laborum itaque exercitationem dolorem magni quod, reprehenderit quaerat a
-                                    quas. Magnam.</p>
+                                <h2 class="uppercase ma-0 self-center font-300">UI Design</h2>
+                                <div class="pl-1_5 pr-1_5 mb-1_5">
+                                    <ul class="mt-0 pl-0">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vitae.
+                                        </li>
+                                        <li>Sapiente quae facilis dicta, eius autem sint nihil dolorum quo.</li>
+                                        <li>Voluptatibus enim itaque obcaecati temporibus illum impedit minima quisquam
+                                            magni?</li>
+                                        <li>Cum in laboriosam tempore ratione enim eius necessitatibus magnam officia.
+                                        </li>
+                                        <li>Nulla placeat sit quae laborum iusto quidem, reiciendis earum voluptas?</li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="flex flex-column gap-1">
                                 <img src="https://picsum.photos/480/480" />
-                                <h2>Graphics</h2>
-                                <p class="ma-0 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis hic
-                                    consequatur
-                                    mollitia,
-                                    sint eius laborum itaque exercitationem dolorem magni quod, reprehenderit quaerat a
-                                    quas. Magnam.</p>
+                                <h2 class="uppercase ma-0 self-center  font-300">Graphics</h2>
+                                <div class="pl-1_5 pr-1_5 mb-1_5">
+                                    <ul class="mt-0 pl-0">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vitae.
+                                        </li>
+                                        <li>Sapiente quae facilis dicta, eius autem sint nihil dolorum quo.</li>
+                                        <li>Voluptatibus enim itaque obcaecati temporibus illum impedit minima quisquam
+                                            magni?</li>
+                                        <li>Cum in laboriosam tempore ratione enim eius necessitatibus magnam officia.
+                                        </li>
+                                        <li>Nulla placeat sit quae laborum iusto quidem, reiciendis earum voluptas?</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-column mt-3">
-                        <h2 class="font-grey">Softwares I use</h2>
-                        <div class=" mt-1 software-image-container">
+                    <div class="flex flex-column mb-6">
+                        <h2 class="font-grey font-150-ns font-100 uppercase mt-2 ma-0 mb-1">Softwares I use</h2>
+                        <div class="  software-image-container">
+                            <div class="image-container">
+                                <img class="software-image" src="https://picsum.photos/263/263" alt="">
+                            </div>
                             <div class="image-container">
                                 <img class="software-image" src="https://picsum.photos/263/263" alt="">
                             </div>
@@ -321,7 +382,7 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <img class="w-20" src="./icons/logo.svg" />
+            <img class="w-20-ns w-50" src="./icons/logo.svg" />
             <div class="socials">
                 <a href="https://www.linkedin.com/in/yash-kohmaria-a96067209/" target="_blank">
                     <img class="social-btn w-70" src="./icons/linkedin-icon.svg" />

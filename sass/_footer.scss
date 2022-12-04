@@ -6,10 +6,10 @@
   background-color: map-get($colors, white-2);
   .footer-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 0 28px;
     .socials {
       display: flex;
       gap: 1rem;
